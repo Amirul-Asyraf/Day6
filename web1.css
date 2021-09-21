@@ -1,0 +1,223 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+html, body {
+    font-family: "Josefin Slab";
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+span {
+    font-style: italic;
+
+}
+
+#app {
+    padding: 1.25em;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: none; /*hide ul by default*/
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section {
+    border-bottom: 1px solid lightgrey;
+}
+
+#food-section ul {
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#food-section ul li {
+    display: inline-block;
+    margin: 15px;
+    /* text-align: center; */
+}
+
+#food-section ul li:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    /* border: 1px solid black; */
+    text-align: center;
+    line-height: 30px;
+}
+
+.food-list {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.food-list > * {
+    margin-bottom: 10px;
+}
+
+#about-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about-section > * {
+    margin: 10px 0;
+}
+
+footer > div {
+    margin: 10px 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.blog h1, .popular h1, .footer h1, .footer p {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    max-width: 380px;
+}
+
+.blog {
+    margin-bottom: 25px;
+}
+.blog h3 {
+    margin-bottom: 10px;
+}
+
+.blog img {
+    width: 75px;
+    height: 75px;
+    margin-right:20px;
+}
+
+.lorem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.ipsum {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.blog-line {
+    margin: 30px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.popular ul {
+    list-style-type: none;
+}
+
+.popular ul li {
+    font-size: 8px;
+    width: 30px;
+    color: white;
+    background-color: #808080;
+    margin: 5px 0px;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+}
+
+@media (min-width:700px) {
+    #food-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .food-list {
+        width: calc(100% / 2);
+        padding: 10px;
+    }
+}
+
+@media (min-width:700px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        vertical-align: top;
+    }
+
+    footer > div {
+        margin: 50px 60px;
+    }
+
+    .popular ul {
+        max-width: 270px;
+    }
+}
+
+@media (min-width:1000px) {
+    header .fas, header #mail {
+        display: none;
+    }
+
+    header ul {
+        display: block;
+    }
+    
+    #food-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .food-list {
+        width: calc(100% / 4);
+        padding: 10px;
+    }
+}
+
+@media (min-width:1400px) {
+    #app {
+        max-width: 1400px;
+    }
+}
+
+@media (max-width:475px) {
+    #about-section {
+        min-width: 475px;
+    }
+
+    .popular {
+        min-width: 270px;
+    }
+}
